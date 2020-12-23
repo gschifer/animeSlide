@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f6816dd194.js" crossorigin="anonymous"></script>
+
+    <title>Home</title>
+
+</head>
+
+<body>
+    <div id="bg">
+        <nav class="navbar">
+            <div class="brand">
+                <img id="logo" src="img/logos/bleach-logo.gif" alt="Logo">
+                <h2 id="text-logo">Bleach</h2>
+            </div>
+        </nav>
+
+        <section class="explore">
+            <div class="info">
+                <h1 class="title">Explore</h1>
+                <p class="title-info">Search to discover new and unique animes by <br> using our search bar!</p>
+                <div class="icon-search">
+                    <input class="search" type="text" placeholder="Search for an anime...">
+                    <i class="fas fa-search icon"></i>
+                </div>
+            </div>
+        </section>
+
+        <div class="slide">
+            <img class="left-arrow" src="img/arrows/left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="img/animes/bleach.png"    class="active thumbnail">
+                <!-- <img src="img/animes/bleach2.jpg"   class="thumbnail"> -->
+                <img src="img/animes/jujutsu.jpg"   class="thumbnail">
+                <img src="img/animes/kuroko.jpg"    class="thumbnail">
+                <img src="img/animes/naruto.png"    class="thumbnail">
+                <img src="img/animes/one-piece.jpg" class="thumbnail">
+            </div>
+            <img class="right-arrow" src="img/arrows/right-arrow.png" id="next">
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

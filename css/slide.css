@@ -1,0 +1,54 @@
+.slide {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 4%;
+    bottom: 25px;
+    
+}
+
+.thumbnail {
+    width: 80px;
+    height: 60px;
+    border-radius: 15px;
+    padding: 8px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.thumbnail:hover {
+    transform: scale(1.15);
+    transition: 0.3s ease-in-out;
+    opacity: 1;  
+}
+
+.left-arrow, .right-arrow {
+    width: 30px;
+    cursor: pointer;
+}
+
+.preview {
+    display: flex;
+    align-items: center;
+    padding: 0 8px 0 12px;
+}
+
+.active {
+    border: 3px solid #f0f0f0;
+    padding: 0;
+    margin-right: 3px;
+    opacity: 1;
+    transform: scale(1.10);
+}
+
+.info-bleach {
+    display: none;
+}
+
+.info-bleach:hover {
+    display: absolute;
+}
+
+#prev {
+    display: none;
+}
