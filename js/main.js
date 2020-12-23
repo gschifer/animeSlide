@@ -5,7 +5,8 @@ var bg        = document.getElementById("bg");
 var logo      = document.getElementById("logo");
 var title     = document.getElementById("text-logo");
 var i         = 0;
-
+var k         = 0;
+var l         = 0;
 
 const bgImages = [
     "img/animes/bleach.png",
@@ -31,6 +32,16 @@ const sizeLogos = {
     "4"         : [{"width": "174px", "height":"131px"}]
 };
 
+const activeAnime = {
+    "0" : [
+        "img/animes/bleach.png", "img/animes/bleach2.jpg", "img/animes/bleach3.jpg","img/animes/bleach4.jpg", 
+        "img/animes/bleach5.jpg", "img/animes/bleach6.jpg", "img/animes/bleach7.jpg", "img/animes/bleach8.png"]
+    // "1" : ["img/animes/bleach.png", "img/animes/bleach2.jpg", "img/animes/bleach3.jpg"],
+    // "2" : ["img/animes/bleach.png", "img/animes/bleach2.jpg", "img/animes/bleach3.jpg"],
+    // "3" : ["img/animes/bleach.png", "img/animes/bleach2.jpg", "img/animes/bleach3.jpg"],
+    // "4" : ["img/animes/bleach.png", "img/animes/bleach2.jpg", "img/animes/bleach3.jpg"],
+}
+
 const nameAnimes = [
     "Bleach",
     "Jujutsu Kaisen",
@@ -40,6 +51,24 @@ const nameAnimes = [
 ];
 
 
+setInterval(() => {
+    slideOverActiveAnime(l);
+}, 4000);
+
+//Generate a random integer between the 2 given parameters
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+//Function to switch images on the active thumbnail
+function slideOverActiveAnime(i) {
+    let max                  = activeAnime[i].length-1
+    let index                = getRandomInt(0, max);
+    thumbnail[i].src         = activeAnime[i][index]
+    bg.style.backgroundImage = 'url(" ' + activeAnime[i][index] + ' ")';
+}
 
 //Adjust the size of the logo based in the given object
 function adjustLogo(i) {
@@ -66,6 +95,8 @@ function changeBackground(next, index) {
             logo.src = logoImages[i];
         } 
     }
+
+    l = i;
 }
 
 //Change the title to its anime name
@@ -84,6 +115,7 @@ for (let j = 0; j < thumbnail.length; j++) {
         thumbnail[i].classList.remove("active");
         thumbnail[j].classList.add("active");
         i = j;
+        l = i;
         logo.src = logoImages[j];
         
         checkAnime(i);
@@ -139,5 +171,4 @@ prev.onclick = () => {
 //    checkAnime(i);
 //    adjustLogo(i);
 // }, 2000);
-
 
