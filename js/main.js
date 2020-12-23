@@ -9,11 +9,11 @@ var k         = 0;
 var l         = 0;
 
 const bgImages = [
-    "img/animes/bleach.png",
-    "img/animes/jujutsu.jpg",
-    "img/animes/kuroko.jpg",
-    "img/animes/naruto.png",
-    "img/animes/one-piece.jpg",
+    "img/animes/bleach/bleach.png",
+    "img/animes/jujutsu/jujutsu.jpg",
+    "img/animes/kuroko/kuroko.jpg",
+    "img/animes/naruto/naruto.png" ,
+    "img/animes/one-piece/one-piece.jpg"
 ];
 
 const logoImages = [
@@ -33,14 +33,23 @@ const sizeLogos = {
 };
 
 const activeAnime = {
-    "0" : [
-        "img/animes/bleach.png", "img/animes/bleach2.jpg", "img/animes/bleach3.jpg","img/animes/bleach4.jpg", 
-        "img/animes/bleach5.jpg", "img/animes/bleach6.jpg", "img/animes/bleach7.jpg", "img/animes/bleach8.png"]
-    // "1" : ["img/animes/bleach.png", "img/animes/bleach2.jpg", "img/animes/bleach3.jpg"],
-    // "2" : ["img/animes/bleach.png", "img/animes/bleach2.jpg", "img/animes/bleach3.jpg"],
-    // "3" : ["img/animes/bleach.png", "img/animes/bleach2.jpg", "img/animes/bleach3.jpg"],
-    // "4" : ["img/animes/bleach.png", "img/animes/bleach2.jpg", "img/animes/bleach3.jpg"],
-}
+    "0" : ["img/animes/bleach/bleach.png", "img/animes/bleach/bleach2.jpg", "img/animes/bleach/bleach3.jpg","img/animes/bleach/bleach4.jpg", 
+        "img/animes/bleach/bleach5.jpg", "img/animes/bleach/bleach6.jpg", "img/animes/bleach/bleach7.jpg", "img/animes/bleach/bleach8.png"],
+
+    "1" : ["img/animes/jujutsu/jujutsu.jpg", "img/animes/jujutsu/jujutsu2.jpg", "img/animes/jujutsu/jujutsu3.jpg",
+     "img/animes/jujutsu/jujutsu4.jpg", "img/animes/jujutsu/jujutsu5.jpg", "img/animes/jujutsu/jujutsu6.jpg", "img/animes/jujutsu/jujutsu7.png"],
+
+    "2" : ["img/animes/kuroko/kuroko.jpg", "img/animes/kuroko/kuroko2.jpg", "img/animes/kuroko/kuroko3.png", "img/animes/kuroko/kuroko4.jpg",
+     "img/animes/kuroko/kuroko5.jpg", "img/animes/kuroko/kuroko6.jpg", "img/animes/kuroko/kuroko7.png", "img/animes/kuroko/kuroko8.jpg"],
+
+    "3" : ["img/animes/naruto/naruto.png", "img/animes/naruto/naruto2.jpg", "img/animes/naruto/naruto3.jpg", "img/animes/naruto/naruto4.jpg",
+        "img/animes/naruto/naruto5.jpg", "img/animes/naruto/naruto6.jpg", "img/animes/naruto/naruto7.jpg", "img/animes/naruto/naruto8.png",
+         "img/animes/naruto/naruto9.png", "img/animes/naruto/naruto10.png"],
+
+    "4" : ["img/animes/one-piece/one-piece.jpg", "img/animes/one-piece/one-piece2.jpg", "img/animes/one-piece/one-piece3.jpg",
+        "img/animes/one-piece/one-piece4.jpg", "img/animes/one-piece/one-piece5.jpg", "img/animes/one-piece/one-piece6.png",
+         "img/animes/one-piece/one-piece7.jpg", "img/animes/one-piece/one-piece8.jpg"],
+};
 
 const nameAnimes = [
     "Bleach",
@@ -163,12 +172,3 @@ prev.onclick = () => {
 
     next.style.display = "block";
 }
-
-//Ocurrs an error when i gets bigger than the bgimages.length-2
-// setInterval(() => {
-//     i > bgImages.length-2 ? i = -1: i = i;
-//    changeBackground(true, i);
-//    checkAnime(i);
-//    adjustLogo(i);
-// }, 2000);
-
