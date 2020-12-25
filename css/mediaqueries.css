@@ -1,0 +1,128 @@
+/* Designed for mobiles */
+@media (max-width:950px) {
+    #bg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #text-logo {
+        margin-left: 0%;
+        margin-top: 7%;
+    }
+
+    .explore {
+        width: 100%;
+        background: none;
+        backdrop-filter: none;
+        position: initial;
+    }
+
+    .thumbnail {
+        width: 80px;
+        height: 55px;
+    }
+
+    .slide {
+        right: initial;
+        bottom: 5%;
+        width: 60%;
+    }
+
+    .preview {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .info {
+        display: none;
+    }
+
+    .left-arrow, .right-arrow {
+        width: 25px;        
+    }
+
+    .left-arrow {
+        margin-right: 10%;
+    }
+
+    .right-arrow {
+        margin-left: 10%;
+    }
+}
+
+/* Designed for small laptops, ipads or gadgets with similar size */
+@media (min-width:951px) and (max-width: 1439px) {
+    .thumbnail {
+        width: 65px;
+        height: 45px;
+    }
+
+    .brand {
+        padding: 0 3%;
+    }
+    
+    .left-arrow, .right-arrow {
+        width: 22px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .title-info {
+        font-size: 1.1rem;
+    }
+
+    .fa-search {
+        margin-left: 333px;
+    }
+
+    @keyframes float {
+        0% {
+          top: 1x;
+        }
+      
+        25% {
+          top: 5px;
+        }
+      
+        50% {
+          top: 1px;
+        }
+      
+        75% {
+          top: 5px;
+        }
+      
+        100% {
+          top: 1px;
+        }
+      }
+}
+
+@media (min-width:1440px) {
+    .title {
+        font-size: 6rem;
+    }
+
+    .title-info {
+        font-size: 2rem;
+    }
+
+    .search {
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-size: 1.5rem;
+    }
+
+    .fa-search {
+        margin-left: 623px;
+        margin-top: 15px;
+    }
+}

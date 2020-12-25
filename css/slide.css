@@ -2,9 +2,20 @@
     display: flex;
     align-items: center;
     position: absolute;
-    right: 4%;
+    right: 0.5%;
     bottom: 25px;
     
+}
+
+.left-arrow, .right-arrow {
+    width: 30px;
+    cursor: pointer;
+}
+
+.preview {
+    display: flex;
+    align-items: center;
+    padding: 0 8px 0 12px;
 }
 
 .thumbnail {
@@ -20,17 +31,6 @@
     transform: scale(1.15);
     transition: 0.3s ease-in-out;
     opacity: 1;  
-}
-
-.left-arrow, .right-arrow {
-    width: 30px;
-    cursor: pointer;
-}
-
-.preview {
-    display: flex;
-    align-items: center;
-    padding: 0 8px 0 12px;
 }
 
 .active {

@@ -6,7 +6,7 @@ body {
 }
 
 #bg {
-   background-image: url(/img/animes/bleach.png);
+   background-image: url(/img/animes/bleach/bleach.png);
    width: 100%;
    height: 100vh;
    background-size: cover;
@@ -61,14 +61,13 @@ body {
 
 .icon-search {
     display: flex;
-    flex-direction: column;
     width: 100%;
 }
 
 .fa-search {
     position: absolute;
     margin-top: 9px;
-    margin-left: 453px;
+    margin-left: 464px;
     cursor: pointer;
 }
 
@@ -90,7 +89,7 @@ body {
 }
 
 .title-info {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 

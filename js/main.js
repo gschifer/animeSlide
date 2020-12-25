@@ -5,7 +5,6 @@ var bg        = document.getElementById("bg");
 var logo      = document.getElementById("logo");
 var title     = document.getElementById("text-logo");
 var i         = 0;
-var k         = 0;
 var l         = 0;
 
 const bgImages = [
@@ -59,17 +58,16 @@ const nameAnimes = [
     "One Piece"
 ];
 
-
 setInterval(() => {
     slideOverActiveAnime(l);
-}, 4000);
+}, 3000);
 
 //Generate a random integer between the 2 given parameters
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+}
 
 //Function to switch images on the active thumbnail
 function slideOverActiveAnime(i) {
